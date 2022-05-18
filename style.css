@@ -114,6 +114,56 @@
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {display: block;}
+
+
+  .search-bar-section{
+    width:1750px;
+    display:flex;
+    justify-content: space-between;
+    margin-top:25px;
+  
+  }
+  
+  .center-search-bar {
+    display: flex;
+    margin-left:110px;
+   }
+   
+   .right-icons{
+  margin-left:70px;
+   }
+  
+   .center-search-bar form {
+    display: flex;
+    border: 1px solid #ddd;
+    height: 35px;
+   }
+  
+   .center-search-bar input {
+    width: 450px;
+    padding:10px;
+    border: 0;
+    height: 100%;
+    border-radius: 2px 0 0 2px
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid #ddd;
+  }
+  
+  .center-search-bar button {
+    height: 100%;
+    width: 60px;
+    border: none;
+  }
+   
+  .mic {
+    margin-top: 10px;
+  }
+  
+  
+
  
   @media (max-width: 768px) {
     .side-bar {
