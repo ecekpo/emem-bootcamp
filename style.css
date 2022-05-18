@@ -11,28 +11,109 @@
     
   }
 
-  header {
+  .nav-bar-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 8vh;
-    background-color:rgb(174, 212, 245)
+    justify-content:space-between;
+    height:500px;
+    width:1200px;
   }
-
-
-  main {
-    height: 100vh;
-    display: flex;
-    background-color: #ebb4b4;
-  }
-
+  
   .side-bar {
-    height: 100vh;
-    width: 17%;
-    background-color:azure;
-    overflow-y: hidden;
-  } 
-
+      height: 100%;
+      display: flex;
+      flex-direction:row;
+      justify-content:left;
+      background-color: white;
+      display:left;
+      margin-left: 30px;
+  }
+  
+  .side-bar img {
+    margin-top:-10px;
+    margin-left:-100px;
+  }
+    
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    width: 150px;
+    height: 1px;
+    
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    height: 500px;
+  }
+  
+  .dropdown-content img {
+  margin-left: -10px;
+  
+  }
+  
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .material-icons{
+    font-size:large;
+  }
+  
+  .nav {
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  .nav-link {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 1px 5px;
+  
+  }
+  
+  .nav-link span {
+    margin-left: 15px;
+  }
+  
+  .nav-link:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+  }
+  
+  .nav-link img {
+    margin-right: 13px;
+       }
+      
+   .active {
+    background: #e5e5e5;
+  }
+  
+  hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+  }
+  
+  
+  .dropdown-content a:hover {background-color:gainsboro}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
  
   @media (max-width: 768px) {
     .side-bar {
